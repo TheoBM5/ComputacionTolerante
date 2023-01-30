@@ -25,8 +25,8 @@ Option<T> para enlaces que posiblemente no tengan ningún valor
 Result<T, E> para resultados de operaciones que pueden generar errores  
 T, E son genéricos. T puede ser cualquier valor, E puede ser cualquier error. Las dos variantes Ok y Err están disponibles globalmente.
 
-[![anteante.png](https://i.postimg.cc/Zn1N0r4q/anteante.png)](https://postimg.cc/zHFvcHLm)
-  
+[![anteante.png](https://i.postimg.cc/ZKzbVf7q/anteante.png)](https://postimg.cc/gr4b0KP9)
+
   Cuando abrimos un archivo desde la ruta, puede devolver un identificador de archivo para que funcione con Ok (archivo), o provoca un error Err (e).
  Con match f nos vemos obligados a lidiar con los dos estados posibles. O asignamos el identificador de archivo a f o regresamos de la función devolviendo el error. 
 Luego leemos el contenido en s, la cadena que se acaba de crear. De nuevo, puede tener éxito o arrojar un error. La función f.read_to_string devuelve la longitud de los bytes leídos, por lo que podemos ignorar el valor con seguridad y devolver un Ok(s) con la lectura de la cadena. 

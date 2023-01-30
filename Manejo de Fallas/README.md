@@ -1,4 +1,4 @@
-#Manejo de Errores en Rust
+# Manejo de Errores en Rust
 Rust agrupa los errores en dos categorías principales
 Recoverable & Unrecoverable
 Errors

@@ -1,25 +1,24 @@
-Manejo de Errores en Rust
+#Manejo de Errores en Rust
 Rust agrupa los errores en dos categorías principales
 Recoverable & Unrecoverable
 Errors
 
 
-Recuperable
+##Recuperable
 Como un error de archivo no encontrado, lo más probable es que solo queramos informar el problema al usuario y volver a intentar la operación.
 
-Irrecuperable
+##Irrecuperable
 Los errores irrecuperables son siempre síntomas de errores, como intentar acceder a una ubicación más allá del final de una matriz, por lo que queremos detener el programa de inmediato operación.
 
 Hay dos formas de causar pánico en la práctica: realizando una acción que provoque pánico (como acceder a una matriz más allá del final) o llamando explícitamente a panic! macro.
 De forma predeterminada, estos avisos graves imprimirán un mensaje de error, se desenrollarán, limpiarán la pila y se cerrarán
 
-
-
+[![12.png](https://i.postimg.cc/Hx0WbXwx/12.png)](https://postimg.cc/tZTHj1mQ)
 
 La llamada pánico! provoca el mensaje de error contenido en las dos últimas líneas. 
 La primera línea muestra el mensaje de pánico y el lugar en el código fuente donde ocurrió el pánico: src/main.rs:2:5 
 
-
+[![par.png](https://i.postimg.cc/tC3d7MnQ/par.png)](https://postimg.cc/1fzVjMKJ)
 
 La biblioteca estándar de Rust proporciona una enumeración Option<T> que se usa cuando la ausencia de un valor es una posibilidad. 
 Option<T> para enlaces que posiblemente no tengan ningún valor

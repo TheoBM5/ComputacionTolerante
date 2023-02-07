@@ -7,7 +7,7 @@ La idea es que mientras se escribe una nota ocurre algún error con el programa 
 
 Para realizar esto utilice el componente timer, el cual permite ejecutar una sección de código cada determinado tiempo. 
 
-El tiempo de intervalo del timer se puede modificar
+El tiempo de intervalo del timer se puede modificar.
 [![timer.png](https://i.postimg.cc/8c6hsJBv/timer.png)](https://postimg.cc/BPJ8VvzZ)
 
 

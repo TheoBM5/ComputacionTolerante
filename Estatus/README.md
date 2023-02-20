@@ -3,6 +3,8 @@
 Existen dos tipos de procesos que puede ejecutar el ordenador.
 1.	Aplicaciones
 2.	Servicios / Daemons
+
+![alt text](https://github.com/[TheoBM5]/[ComputacionTolerante]/blob/[main]/image.jpg?raw=true)
 Las aplicaciones son aquellos procesos que se ejecutan generalmente en primer plano y responden a la interacción con el usuario.
 Los servicios (llamados daemons en Linux), son un tipo de procesos que se ejecutan de forma ajena al usuario. Los servicios no están vinculados al usuario, por lo que se pueden ejecutar antes de que se haya iniciado sesión. Por otra parte, al ser independientes del usuario, los servicios no pretenden interactuar con el usuario, sino realizar una función en segundo plano. No tienen interfaz gráfica y no están vinculados a un terminal.
 Desarrollo

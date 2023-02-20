@@ -1,6 +1,6 @@
 # Crear Servicios para Windows con Python
 ## ¿qué es un servicio en informática?
-Existen dos timpos de procesos que puede ejecutar el ordenador.
+Existen dos tipos de procesos que puede ejecutar el ordenador.
 1.	Aplicaciones
 2.	Servicios / Daemons
 Las aplicaciones son aquellos procesos que se ejecutan generalmente en primer plano y responden a la interacción con el usuario.

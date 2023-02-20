@@ -4,7 +4,7 @@ Existen dos tipos de procesos que puede ejecutar el ordenador.
 1.	Aplicaciones
 2.	Servicios / Daemons
 
-https://github.com/[TheoBM5]/[ComputacionTolerante]/blob/[main]/logo.jpg?raw=true 
+https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/logo.jpg
 
 Instalaciones 
 Tener descargado NSSM - the Non-Sucking Service Manager 

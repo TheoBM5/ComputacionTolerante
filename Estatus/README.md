@@ -24,21 +24,37 @@ Desarrollo
 Lo que se realizara en esta practica es un servicio a partir de un script en Python 
 se plantea que una aplicación permanezca abierta o ejecutándose mediante un servicio para que aun cuando haya ocurrido un error y tenga que cerrarse, se reabra la aplicación automáticamente. Para ello, primeramente, se creó el script para la aplicación que se iba a utilizar, en el cual se desarrolla código que comprueba constantemente si el estado de la aplicación esta activo o no.
 Pickle en Python se usa principalmente para serializar y deserializar una estructura de objetos de Python. En otras palabras, es el proceso de convertir un objeto de Python en un flujo de bytes para almacenarlo en un archivo/base de datos, mantener el estado del programa entre sesiones. Cuando un flujo de bytes se elimina, el módulo pickle primero crea una instancia del objeto original y luego completa la instancia con los datos correctos.
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/code.png?raw=true)
+
 La primera función del programa busca el proceso que será interceptado, para señalar al proceso que se quiere interceptar se debe pasar el nombre del proceso como parámetro, en caso de no recibir un parámetro se señalará un mensaje advirtiendo que se requiere un parámetro.
 También se añade una funcion que es la encargada de matar el proceso, la cuál es llamada al último de los procesos.
 Se hizo uso de The Non Sucking Service Manager (NSSM), el cual permite supervisar el servicio en ejecución y reiniciarlo si muere.
 Nssm
 Para poder utilizar esta herramienta es necesario seguir los pasos que vienen en su instalación, primero se descarga el programa, se descomprime, se busca el ejecutable que corresponde a la arquitectura de nuestra computadora y se copea y pega en una carpeta llamada custom-service. Esta carpeta debe tener tanto el ejecutable nssm así como el script que se usara como servicio. 
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/customservices.png?raw=true)
+
 Para configurar e iniciar el servicio primero se debe abrir un consola con permisos de administrador, nos dirigimos a la ruta donde se encuentra la carpeta con los dos archivos.
 Se Abre el instalador de nssm ejecutando:
 ### nssm.exe install proclocker
 
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/nssm2.png?raw=true)
+
 Se ejecutará el programa nssm, en el primer campo se pone la ruta donde se encuentra Python, en el segundo campo la ruta a la carpeta custom-service y en el último campo se ingresa el nombre del script y se pasan los parámetros, en este caso lo que cerrara será el proceso Firefox, por lo que cerrara el navegador una vez que el servicio este activo.
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/nssmexito.png?raw=true)
+
 Después de configurar el campo aparecerá una ventana con un mensaje indicando que se instalo correctamente. 
 Es importante que las rutas estén bien dirigidas y escritas, puse una ruta mal y no me dejaba iniciar el servicio, por lo que si aparece un error como el mostrado arriba el causante puede ser una mala captura en alguna de las direcciones. 
-Finalmente, lo que se realizara será iniciar el servicio proclocker: START, una vez ingresado lo que hará será cerra mi navegador.
-Procesos
+Finalmente, lo que se realizara será iniciar el servicio proclocker: START, una vez ingresado lo que hará será cerrar mi navegador.
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/procesosServicios.png?raw=true)
+
 proclocker aparece en la lista de procesos del administrador de tareas de Windows. La ventana del navegador se cerro y cada vez que la intente abrir se cerrera. Al reiniciar la computadora el proceso seguirá ejecutándose por lo que seguiré sin poder acceder al navegador. 
 Para detener el servicio se ejecuta en la línea de comandos nssm.exe stop proclocker
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/stop.png?raw=true)
+
 Al detenerse el servicio he intentar entrar al navegador se observará que todas las pestañas que estaban abiertas antes del cierre siguen ahí. Esto debido al módulo pickle.
 Conclusión:  Conocer nuevas formas de manejar un programa es esencial para poder tener nuevas herramientas que permitan tener mayor control sobre lo que ocurre en nuestros programas, incluso el uso de servicios nos permite automatizar ciertas tareas que se requieran realizar cada determinado tiempo. Con este tipo de herramientas podremos supervisar las condiciones en las que buscamos que se mantenga una aplicación.

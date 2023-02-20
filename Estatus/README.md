@@ -5,8 +5,19 @@ Existen dos tipos de procesos que puede ejecutar el ordenador.
 2.	Servicios / Daemons
 
 ![alt text](https://github.com/[TheoBM5]/[ComputacionTolerante]/blob/[main]/image.jpg?raw=true)
+
+
+Instalaciones 
+Tener descargado NSSM - the Non-Sucking Service Manager 
+Esta utilidad gratuita permite instalar, iniciar, detener y desinstalar servicios de windows
+https://nssm.cc/download
+Módulo psutil
+python -m pip install psutil
+
+
 Las aplicaciones son aquellos procesos que se ejecutan generalmente en primer plano y responden a la interacción con el usuario.
 Los servicios (llamados daemons en Linux), son un tipo de procesos que se ejecutan de forma ajena al usuario. Los servicios no están vinculados al usuario, por lo que se pueden ejecutar antes de que se haya iniciado sesión. Por otra parte, al ser independientes del usuario, los servicios no pretenden interactuar con el usuario, sino realizar una función en segundo plano. No tienen interfaz gráfica y no están vinculados a un terminal.
+
 Desarrollo
 Lo que se realizara en esta practica es un servicio a partir de un script en Python 
 se plantea que una aplicación permanezca abierta o ejecutándose mediante un servicio para que aun cuando haya ocurrido un error y tenga que cerrarse, se reabra la aplicación automáticamente. Para ello, primeramente, se creó el script para la aplicación que se iba a utilizar, en el cual se desarrolla código que comprueba constantemente si el estado de la aplicación esta activo o no.
@@ -18,6 +29,8 @@ Nssm
 Para poder utilizar esta herramienta es necesario seguir los pasos que vienen en su instalación, primero se descarga el programa, se descomprime, se busca el ejecutable que corresponde a la arquitectura de nuestra computadora y se copea y pega en una carpeta llamada custom-service. Esta carpeta debe tener tanto el ejecutable nssm así como el script que se usara como servicio. 
 Para configurar e iniciar el servicio primero se debe abrir un consola con permisos de administrador, nos dirigimos a la ruta donde se encuentra la carpeta con los dos archivos.
 Se Abre el instalador de nssm ejecutando:
+### nssm.exe install proclocker
+
 Se ejecutará el programa nssm, en el primer campo se pone la ruta donde se encuentra Python, en el segundo campo la ruta a la carpeta custom-service y en el último campo se ingresa el nombre del script y se pasan los parámetros, en este caso lo que cerrara será el proceso Firefox, por lo que cerrara el navegador una vez que el servicio este activo.
 Después de configurar el campo aparecerá una ventana con un mensaje indicando que se instalo correctamente. 
 Es importante que las rutas estén bien dirigidas y escritas, puse una ruta mal y no me dejaba iniciar el servicio, por lo que si aparece un error como el mostrado arriba el causante puede ser una mala captura en alguna de las direcciones. 

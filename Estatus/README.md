@@ -7,9 +7,12 @@ Existen dos tipos de procesos que puede ejecutar el ordenador.
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Estatus/Recursos/logo.jpg?raw=true)
 
 Instalaciones 
+
 Tener descargado NSSM - the Non-Sucking Service Manager 
+
 Esta utilidad gratuita permite instalar, iniciar, detener y desinstalar servicios de windows
 https://nssm.cc/download
+
 Módulo psutil
 python -m pip install psutil
 

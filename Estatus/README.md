@@ -4,7 +4,7 @@ Existen dos tipos de procesos que puede ejecutar el ordenador.
 1.	Aplicaciones
 2.	Servicios / Daemons
 
-![alt text](https://github.com/[TheoBM5]/[ComputacionTolerante]/blob/[main]/image.jpg?raw=true)
+![alt text](https://github.com/[TheoBM5]/[ComputacionTolerante]/blob/[main]/Recursos/logo.jpg?raw=true)
 
 
 Instalaciones 

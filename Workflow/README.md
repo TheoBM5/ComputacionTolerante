@@ -10,6 +10,6 @@ Si se coloca toda la lógica del flujo de trabajo en una sola función de flujo 
 Al igual que con cualquier función estándar de Python, se puede pasar parámetros a una función de flujo, que luego se usan en otras partes del flujo. 
 
 
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/tree/main/Workflow/Recursos/image1.jpg?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Workflow/Recursos/image1.png?raw=true)
 
 Instalaciones 

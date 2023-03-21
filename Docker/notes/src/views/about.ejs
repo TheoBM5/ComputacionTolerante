@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <%- include("partials/head") %>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include("partials/navigation") %>
+
+    <!-- My Content -->
+    <main
+      class="container pt-2 text-center d-flex justify-content-center align-items-center vh-100">
+      <section>
+        <div class="tittle_">
+          <h1 class="display-1_">Conceptos</h1>
+        </div>
+        <div class="contenedor1">
+          <div class="contenedor1-dos">
+            <div class="textos">
+              <h3>Contenedor</h3>
+              <p>Es una instancia de una imagen ejecutándose en 
+              un ambiente aislado.</p>
+            </div>
+            <div class="textos">
+              <h3>Imagen</h3>
+              <p>
+                Es un archivo construido por capas, que contiene 
+                todas las dependencias para ejecutarse, tal 
+                como: las dependencias, configuraciones, 
+                scripts, archivos binarios, etc.
+              </p>
+            </div>
+            <div class="textos">
+              <h3>Dockerizar una aplicación</h3>
+              <p>
+                Proceso de tomar un código fuente y generar una 
+                imagen lista para montar y correrla en un 
+                contenedor.
+              </p>
+            </div>
+            <div class="textos">
+              <h3>Dockerfile</h3>
+              <p>
+                Un archivo de texto con instrucciones necesarias 
+                para crear una imagen. Se puede ver como un 
+                blueprint o plano para su construcción. 
+              </p>
+            </div>
+            <div class="textos">
+              <h3>Docker Deamon</h3>
+              <p>
+                Es el servicio en segundo plano que se ejecuta 
+                en el host que administra la creación, ejecución y 
+                distribución de contenedores Docker
+              </p>
+            </div>
+            <div class="textos">
+              <h3>Docker Layers</h3>
+              <p>
+                Las capas son el resultado de la forma en que se 
+                construyen las imágenes de Docker. Cada paso 
+                en un Dockerfile crea una nueva "capa" que es 
+                esencialmente una diferencia de los cambios en 
+                el sistema de archivos desde el último paso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

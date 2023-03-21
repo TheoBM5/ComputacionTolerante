@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>First Node Project</title>
+    <%- include("partials/head") %>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <%- include("partials/navigation") %>
+
+    <!-- MAIN CONTENT -->
+
+    <header
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img
+          src="/img/docker.png"
+          class="w-25 m-auto animated bounceIn"
+          alt="Website Logo"
+        />
+        <h1 class="display-1 my-5 text-uppercase fw-bold">Docker</h1>
+        <a href="/about" class="btn btn-primary w-25">Inicio</a>
+      </div>
+    </header>
+
+    <!-- section one -->
+    <div class="container-fluid" id="about">
+      <div class="row bg-dark text-white p-5 text-center">
+        <div class="col-md-4 offset-md-4">
+          <h3>Concepto</h3>
+          <p>
+            Docker es una herramienta diseñada para facilitar 
+            la creación, implementación y ejecución de 
+            aplicaciones mediante el uso de contenedores.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <%- include("partials/footer") %>
+
+    <!-- JAVASCRIPT CDNS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

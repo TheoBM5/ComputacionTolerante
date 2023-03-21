@@ -34,18 +34,20 @@ Para correr el contenedor, se utiliza:
 Y para especificar el puerto en el que se está escuchando (de manera local): 
 - “Docker run -p 3000:3000 nombreimagen”
 
-
+Se construye la imagen 
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/build.png?raw=true)
 
+Se muestra que la imagen fue creada correctamente 
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/imagels.png?raw=true)
 
+Se corre la imagen en un contenedor en el puerto 3000
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/imagerun.png?raw=true)
 
-
+Se entra en el puerto 3000 donde esta corriendo el contenedor
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/runapp.png?raw=true)
 
-
+Aqui se logea con las credenciales correspondientes a mi cuenta en docker hub y se hace push de la imagen creada
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/imageweb.png?raw=true)
 
-
+Aqui se muestra que la imagen fue subida correctamente a docker hub
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/hub.png?raw=true)

@@ -10,6 +10,6 @@ Si se coloca toda la lógica del flujo de trabajo en una sola función de flujo 
 Al igual que con cualquier función estándar de Python, se puede pasar parámetros a una función de flujo, que luego se usan en otras partes del flujo. 
 
 
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/image.png?raw=true)
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/image.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/build.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/carga.png?raw=true)
 

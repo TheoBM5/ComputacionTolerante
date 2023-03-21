@@ -1,19 +1,15 @@
-# Restaurar estado
-El desarrollo de la práctica consiste en el uso de un método que permita guardar el estado de ejecución por lo que para esta práctica se desarrolló una aplicación de Notas en la cual se permite crear, editar y guardar notas.
+# WorkFlow
+## Prefect
+### Desarrollo
 
-Decidí utilizar C# para esta práctica. Se utilizarán funciones que permiten escribir y leer de archivos.
-
-La idea es que mientras se escribe una nota ocurre algún error con el programa lo que se lleve escrito no se perderá.
-
-Para realizar esto utilice el componente timer, el cual permite ejecutar una sección de código cada determinado tiempo. 
-
-El tiempo de intervalo del timer se puede modificar.
-[![timer.png](https://i.postimg.cc/8c6hsJBv/timer.png)](https://postimg.cc/BPJ8VvzZ)
-
-
-Para evitar que se pierda información cree un archivo de respaldo donde se ira guardando lo escrito en la nota cada quince segundos.
-Si la nota esta vacía o se acaba de guardar no abra respaldo, el respaldo comenzara hasta que se agregue un carácter más o se quite uno después de guardar. 
+Para el desarrollo de un Workflow mediante el lenguaje Python, se utiliza Prefect para la gestión del flujo de trabajo. 
+Un flujo es un contenedor para la lógica del flujo de trabajo y permite a los usuarios interactuar y razonar sobre el estado de sus flujos de trabajo. Se representa en Python como una sola función.
+Los flujos son como funciones. Pueden tomar entradas, realizar trabajo y devolver una salida. De hecho, puede convertir cualquier función en un flujo perfecto agregando el decorador @flow
+Una task es una función que representa un trabajo distinto ejecutado dentro de un flujo. 
+Si se coloca toda la lógica del flujo de trabajo en una sola función de flujo y falla alguna línea de código, todo el flujo fallará y se deberá volver a intentar desde el principio. Esto se puede evitar dividiendo el código en varias tareas.  
+Al igual que con cualquier función estándar de Python, se puede pasar parámetros a una función de flujo, que luego se usan en otras partes del flujo. 
 
 
-### Guardar
-[![captura2.png](https://i.postimg.cc/nLNrrddd/captura2.png)](https://postimg.cc/yJXsrTC9)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/image.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/image.png?raw=true)
+

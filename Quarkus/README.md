@@ -31,12 +31,12 @@ Para empezar a usar quarkus ingresé a la página de quarkus y comencé un proye
 
 Una vez que esta configurado y programado el proyecto en quarkus, se puede comenzar a ejecutar algunos de los comandos de mvn como mvn clean package el cual compilará el código y también lo empaquetará.
 
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen6.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen6.jpeg?raw=true)
 Con el comando mvn compile quarkus:dv comienza a compilar el programa se puede ver como el programa pasa por algunos de los test. 
 
  
 Algunas de las opciones que se muestran es mostrar una interfaz para manejar algunas de las funciones de quarkus
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen8.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen7.jpeg?raw=true)
 Algunas de las funciones permite que en lugar de tener que desplegar cada vez que haya cambios estos se vean reflejados en la interfaz cada vez que haya un cambio. 
  
 El programa simula un servicio que falla, por lo que antes que ocurra una falla mandara un warning para posteriormente fallar y volver a funcionar. El usar una librería de tolerancia a fallas permite generar caminos alternativos ante un error, por lo que en caso de que ocurra un error se ejecutara otra función.

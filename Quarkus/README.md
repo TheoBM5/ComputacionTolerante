@@ -33,10 +33,10 @@ Una vez que esta configurado y programado el proyecto en quarkus, se puede comen
 
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen6.jpeg?raw=true)
 Con el comando mvn compile quarkus:dv comienza a compilar el programa se puede ver como el programa pasa por algunos de los test. 
-
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen7.jpeg?raw=true)
  
 Algunas de las opciones que se muestran es mostrar una interfaz para manejar algunas de las funciones de quarkus
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen7.jpeg?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen8.jpeg?raw=true)
 Algunas de las funciones permite que en lugar de tener que desplegar cada vez que haya cambios estos se vean reflejados en la interfaz cada vez que haya un cambio. 
  
 El programa simula un servicio que falla, por lo que antes que ocurra una falla mandara un warning para posteriormente fallar y volver a funcionar. El usar una librería de tolerancia a fallas permite generar caminos alternativos ante un error, por lo que en caso de que ocurra un error se ejecutara otra función.

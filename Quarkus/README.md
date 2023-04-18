@@ -53,10 +53,3 @@ Otra de las funciones es circuitbreaker el cual limita la cantidad de fallas que
 Otra función es buildhead limita la cantidad de clientes que pueden realizar peticiones hasta que decida dar un camino alternativo.
 
 Conclusión: Me pareció una herramienta interesante ya que facilita el uso de herramientas para el manejo de fallas, aunque al yo no estar familiarizado con el lenguaje me resulto algo mas complicado de codificar. Este tipo de herramientas me parecen interesantes creo que permiten automatizar la corrección de fallas al usar las herramientas adecuadas. 
-Fuentes: 
-https://www.arquitecturajava.com/jakarta-ee/
-https://www.javatpoint.com/java-ee
-https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me
-https://www.educative.io/answers/what-is-jakarta-ee
-https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm
-https://www.ionos.com/digitalguide/server/configuration/what-is-quarkus/

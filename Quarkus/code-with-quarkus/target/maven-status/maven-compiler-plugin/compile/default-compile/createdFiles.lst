@@ -1,0 +1,3 @@
+org\acme\controller\PersonController.class
+org\acme\controller\GreetingResource.class
+org\acme\model\Person.class

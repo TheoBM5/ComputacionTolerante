@@ -24,10 +24,11 @@ Gradle es una herramienta de automatización de compilación de código abierto 
 # Quarkus/MicroProfile
 Instalaciones: 
 Primero instale Maven, se configuraron las respectivas variables del sistema y se instalo java 
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen1.png?raw=true)
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen2.png?raw=true)
  
 Para empezar a usar quarkus ingresé a la página de quarkus y comencé un proyecto. Seleccione las bibliotecas que se muestran en el video. Una vez que fueron seleccionadas las bibliotecas descargué el proyecto y lo abrí en un editor de código.
- 
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Quarkus/recursos/imagen1.png?raw=true)
+
 Una vez que esta configurado y programado el proyecto en quarkus, se puede comenzar a ejecutar algunos de los comandos de mvn como mvn clean package el cual compilará el código y también lo empaquetará.
 
  

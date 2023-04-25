@@ -47,8 +47,10 @@ Aqui se muestra que la imagen fue subida correctamente a docker hub
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/hub.png?raw=true)
 
 Para trabajar con kubernetes se instalo kubernetes adema de instalar minikube , al trabajar con maquinas virtuales tuve que activar la virtualización desde la bios.
+
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Kubernetes/src/k8_2.png?raw=true)
 Para empezar se inicio minikube con el comando minikube start , esto configura todo lo necesario para hacer una maquina virtual he iniciarla, esto creo un cluster local
+
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Kubernetes/src/k8_3.png?raw=true)
 Una vez creado el cluster se subió la imagen de Docker que previamente había subido a Dockerhub, con el comando kubectl run notedocker –image=     -port 80
 

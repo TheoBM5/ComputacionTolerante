@@ -8,13 +8,8 @@ Ingress permite acceder a pods desde fuera de los clústers. Es un pod que redir
 
 Instalaciones
 • Docker : https://www.docker.com/products/dockerdesktop/  
-Se agregó a las rutas del sistema para poder trabajar con él. El desarrollo de su instalación se encuentra en el archivo ‘Instalar Docker.txt’.
-
-Docker es una herramienta diseñada para facilitar la creación, implementación y ejecución de aplicaciones mediante el uso de contenedores. 
-
-Es una instancia de una imagen ejecutándose en un ambiente aislado.
-
-Es un archivo construido por capas, que contiene todas las dependencias para ejecutarse, tal como: las dependencias, configuraciones, scripts, archivos binarios, etc
+•	Kubectl
+•	minikube
 
 
 Dockerfile
@@ -48,12 +43,16 @@ Se muestra que la imagen fue creada correctamente
 Se corre la imagen en un contenedor en el puerto 3000
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/imagerun.png?raw=true)
 
-Se entra en el puerto 3000 donde esta corriendo el contenedor
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/runapp.png?raw=true)
-
-Aqui se logea con las credenciales correspondientes a mi cuenta en docker hub y se hace push de la imagen creada
-![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/imageweb.png?raw=true)
-
 Aqui se muestra que la imagen fue subida correctamente a docker hub
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Docker/src/hub.png?raw=true)
 
+Para trabajar con kubernetes se instalo kubernetes adema de instalar minikube , al trabajar con maquinas virtuales tuve que activar la virtualización desde la bios.
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Kubernetes/src/k8_2.png?raw=true)
+Para empezar se inicio minikube con el comando minikube start , esto configura todo lo necesario para hacer una maquina virtual he iniciarla, esto creo un cluster local
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Kubernetes/src/k8_3.png?raw=true)
+Una vez creado el cluster se subió la imagen de Docker que previamente había subido a Dockerhub, con el comando kubectl run notedocker –image=     -port 80
+
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Kubernetes/src/k8_1.png?raw=true)
+Con el comando minikube dashboard se puede ver que el pod ya está en funcionamiento
+
+Conclusión: kubernetes es una gran y poderosa herramienta que ayuda a facilitar el despliegue de aplicaciones, creo que es muy útil saber utilizar. Lo trabaja de manera local aunque también lo intente subiéndolo a la nube, no me pareció tan complicado ya que era similar al archivo de Docker, esta facilidad creo que hace practico utilizar esta herramienta, aunque solo haya visto lo básico. 

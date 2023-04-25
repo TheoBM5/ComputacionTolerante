@@ -1,0 +1,32 @@
+body {
+    background: #202020;
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-family: 'Spicy Rice', cursive;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    text-transform: uppercase;
+    font-family: 'Spicy Rice', cursive;
+  }
+  
+  header img {
+    width: 60%;
+  }
+
+  .contenedor1-dos{
+    width: 90%;
+    height: 50%;
+    max-width: 1200px;
+    margin: auto;
+    padding:  40px 0;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+ 

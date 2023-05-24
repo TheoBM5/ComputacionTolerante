@@ -23,6 +23,7 @@ Después de haber ejecutado el comando aparecerá la ventana del juego de cheeky
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/CheekyMonkey/src/explorer_2Ly4dOCQOp.png?raw=true)
 
 Ampliando la consola se puede apreciar que se mato un pod aleatoriamente, al estar utilizando el programa de ejemplo de Google cada vez que se mate un pod aparecerá el nombre de un servicio, en este primer caso mato el pod que tenia el servicio de compra. 
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/CheekyMonkey/src/cmd_yFfdfmHYYd.png?raw=true)
  
 En la esquina superior izquierda se muestra también el ultimo pod que se eliminó, que fue el mismo que se muestra en la consola. 
  

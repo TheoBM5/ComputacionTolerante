@@ -9,6 +9,7 @@ Una vez descargado el repositorio se instalaron las librerías necesarias.
 Desarrollo
 En esta actividad use la actividad anterior en la cual ya había iniciado algunos pods en base a un ejemplo de Google que cuenta con varios servicios. Cada microservicio tiene un contenedor dentro del pod.
  
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/CheekyMonkey/src/cmd_gsOeEfHYAt.png?raw=true)
 
 El archivo de configuración de Cheekymonkey se dejo como estaba, solo cambie que solo rompieran las cajas con un golpe.
  

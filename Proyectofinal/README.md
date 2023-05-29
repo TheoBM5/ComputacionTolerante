@@ -5,7 +5,7 @@ El proyecto final es una pequeña aplcacion para ver el cima, para esto hice uso
 ### Manejo de errores
 En esta unidad se vio como manejar los errores que se pueden presentar en una aplicacion.
 Para el proyecto implementa validaciones para evitar cualquier error que pudiera ocasionar algun fallo por intentar procesar una cadena erronea. Para las validaciones contemple tanto las cadenas vacias, campos numericos y caracteres.  Esto tambien permite no hacer consultas incesarias a la api ya que la consulta no se realizara si no cumple contodas las validaciones
-
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Proyectofinal/src/imagen1.png?raw=true)
 
 Para el manejo de errores con la api, ya sea porque la api no estuviera disponible o hubiera algun fallo de conexion use catch para atrapar esos errores y señarle al usuario el incovenientee temporal. Tanto con las validaciones como con el manejo de los errores permitio que en ningun caso la aplicacion dejara de funcionar
 

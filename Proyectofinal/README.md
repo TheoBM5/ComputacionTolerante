@@ -2,7 +2,7 @@
 
 ## Clima
 http://138.197.228.79/
-El proyecto final es una pequeña aplcacion para ver el cima, para esto hice uso de la api de openweathermap. Intente implementar todos los conceptos vistos en clase con el fin de hacer la aplicacion lo mas toplerante a fallos posible. 
+El proyecto final es una pequeña aplcacion para ver el clima, para esto hice uso de la api de openweathermap. Intente implementar todos los conceptos vistos en clase con el fin de hacer la aplicacion lo mas toplerante a fallos posible. 
 ![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Proyectofinal/src/gif2.gif?raw=true)
 
 ### Manejo de errores

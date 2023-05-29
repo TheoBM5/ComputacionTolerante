@@ -9,6 +9,8 @@ Para el proyecto implementa validaciones para evitar cualquier error que pudiera
 
 Para el manejo de errores con la api, ya sea porque la api no estuviera disponible o hubiera algun fallo de conexion use catch para atrapar esos errores y señarle al usuario el incovenientee temporal. Tanto con las validaciones como con el manejo de los errores permitio que en ningun caso la aplicacion dejara de funcionar
 
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Proyectofinal/src/imagen2.png?raw=true)
+
 #### Checkpoint
 Para mantener el estado de la aplicacion opte por tener una cache con las consultas hechas por el usuario, esto con el fin de no realizar mas consultas a la api, cuando se busca una ciudad se guardara en la cache y si el usuario busca otra vez la misma ciudad no se realizara otra vez la consulta si no que se obtendra el resultado de la cache
 
@@ -29,3 +31,4 @@ Teniendo el archivo yaml ya puede hacer el deploy de la aplicacion y pude ver la
 ### Chaos Engineering
 Por ultimo para verificar que los pods se mantuvieran activos uso cheekymonkey para tirar varios pods y verficar que se volvieran a reponer
 Durante las pruebas varios pods fueron destruidos y en ningun momento la aplcacion fallo. Tambien viendo los pods cada vez que se eliminaba uno otro aparecia por loque esto me permitio comprobar que la aplicion era capaz de mantenerse. 
+![alt text](https://github.com/TheoBM5/ComputacionTolerante/blob/main/Proyectofinal/src/gif1.gif?raw=true)
